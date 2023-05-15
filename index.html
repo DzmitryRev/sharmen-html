@@ -2,10 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sharmen</title>
   </head>
   <body>
-    <script type="module" src=".src/main.js"></script>
+    <div class="container">
+      <header class="header">
+        <div class="header__logo">
+          <img src="./src/assets/logo-large.png" alt="" />
+        </div>
+        <div class="burger-menu">
+            <div class="burger-menu__line"></div>
+            <div class="burger-menu__line"></div>
+            <div class="burger-menu__line"></div>
+          </div>
+        <nav class="nav">
+          <aside class="sidebar"></aside>
+          <ul class="nav-list nav-list_white-text">
+            <li class="nav-list__item"><a href="" class="nav-list__link">roadmap</a></li>
+            <li class="nav-list__item"><a href="" class="nav-list__link">about us</a></li>
+            <li class="nav-list__item"><a href="" class="nav-list__link">whitepaper</a></li>
+          </ul>
+          <div class="nav__logo-container">
+            <img src="./src/assets/logo-small.png" alt="" class="nav__logo" />
+          </div>
+          <ul class="nav-list nav-list_black-text">
+            <li class="nav-list__item"><a href="" class="nav-list__link">blogs</a></li>
+            <li class="nav-list__item"><a href="" class="nav-list__link">collections</a></li>
+            <li class="nav-list__item"><a href="" class="nav-list__link">contact</a></li>
+          </ul>
+        </nav>
+        <div class="header__dancing-girl-image">
+          <img src="./src/assets/dancing-girl.png" alt="" />
+        </div>
+        <div class="header__girl-with-wolf-leg-image">
+          <img src="./src/assets/girl-with-wolf-leg.png" alt="" />
+        </div>
+        <div class="header-bcg">
+          <div class="header-bcg__overlay_left"></div>
+          <div class="header-bcg__overlay_right"></div>
+          <img src="./src/assets/intro-bcg-left.png" alt="" class="header-bcg__image" />
+          <img src="./src/assets/intro-bcg-right.png" alt="" class="header-bcg__image" />
+        </div>
+      </header>
+    </div>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>

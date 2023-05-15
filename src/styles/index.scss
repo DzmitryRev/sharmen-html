@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&family=Titan+One&display=swap");
+@import "./variables";
+@import "./sections/header.scss";
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scrollbar-width: none;
+}
+
+body {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    cursor: default;
+}
+
+img {
+    width: 100%;
+}
+
+// .container {
+//     max-width: 1920px;
+//     margin-inline: auto;
+// }
