@@ -1,0 +1,85 @@
+.discover-section {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    padding: 19.7% 5% 0 0;
+    &__dancing-girl-container {
+        position: absolute;
+        max-width: 778px;
+        transform: scale(-1, 1);
+        inset: 22% auto auto -1.5%;
+    }
+
+    &__content-container {
+        z-index: 1;
+        max-width: 1015px;
+        letter-spacing: 5.5px;
+    }
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__description {
+        margin-bottom: 50px;
+        letter-spacing: normal;
+    }
+    &__buttons-container {
+        padding: 0 0 0 24px;
+    }
+
+    &__button {
+        &:first-of-type {
+            margin-right: 75px;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .discover-section {
+        &__title {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .discover-section {
+        justify-content: center;
+        padding-inline: 25px;
+        &__dancing-girl-container {
+            max-width: 478px;
+        }
+    }
+}
+@media screen and (max-width: 780px) {
+    .discover-section {
+        padding-inline: 15px;
+
+        &__dancing-girl-container {
+            max-width: 378px;
+        }
+    }
+}
+@media screen and (max-width: 530px) {
+    .discover-section {
+        &__buttons-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__button {
+            width: fit-content;
+            &:first-of-type {
+                margin-right: 0;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 330px) {
+    .discover-section {
+        &__dancing-girl-container {
+            max-width: 278px;
+        }
+    }
+}
