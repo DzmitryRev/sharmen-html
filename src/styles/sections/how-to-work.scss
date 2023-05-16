@@ -1,0 +1,73 @@
+.how-to-work-section {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    padding: 16.8% 0 0 9%;
+    &__dancing-girl-container {
+        position: absolute;
+        max-width: 778px;
+        inset: 27.2% 0 auto auto;
+    }
+
+    &__content-container {
+        z-index: 1;
+        max-width: 1015px;
+        letter-spacing: 5.5px;
+    }
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__description {
+        max-width: 900px;
+        margin-bottom: 32px;
+        letter-spacing: normal;
+        &:last-of-type {
+            margin-bottom: 48px;
+        }
+    }
+    &__buttons-container {
+        padding: 0 0 0 24px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .how-to-work-section {
+        &__title {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .how-to-work-section {
+        justify-content: center;
+        padding-inline: 25px;
+        &__dancing-girl-container {
+            max-width: 478px;
+        }
+    }
+}
+@media screen and (max-width: 780px) {
+    .how-to-work-section {
+        padding-inline: 15px;
+
+        &__dancing-girl-container {
+            max-width: 378px;
+        }
+    }
+}
+@media screen and (max-width: 530px) {
+    .how-to-work-section {
+        &__description {
+            margin-bottom: 15px;
+        }
+    }
+}
+@media screen and (max-width: 330px) {
+    .how-to-work-section {
+        &__dancing-girl-container {
+            max-width: 278px;
+        }
+    }
+}
