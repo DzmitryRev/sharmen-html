@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&family=Titan+One&display=swap");
 @import "./variables";
 @import "./sections/header.scss";
+@import "./components/button.scss";
 *,
 *::before,
 *::after {
@@ -16,6 +17,7 @@ body {
     &::-webkit-scrollbar {
         display: none;
     }
+    height: 300vh;
 }
 
 button {

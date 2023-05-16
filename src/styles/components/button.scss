@@ -1,0 +1,66 @@
+.button {
+    position: relative;
+    top: 763.5px;
+    left: 833px;
+    padding: 19px 11px;
+    text-transform: uppercase;
+    color: #fff;
+    border-right: none;
+    border-left: none;
+    font-family: Titan One;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 37px;
+    &::before,
+    &::after {
+        position: absolute;
+        top: 0;
+        display: block;
+        content: "";
+        border-style: solid;
+    }
+
+    &::before {
+        left: -26px;
+        border-width: 38.5px 27px 38px 0;
+    }
+
+    &::after {
+        right: -26px;
+        border-width: 38.5px 0 38px 27px;
+    }
+
+    &_primary {
+        transition: background-color 0.3s ease-in-out;
+
+        background-color: $primary-gold;
+        &::before {
+            transition: border-color 0.3s ease-in-out;
+
+            border-color: transparent $primary-gold transparent transparent;
+        }
+        &::after {
+            transition: border-color 0.3s ease-in-out;
+
+            border-color: transparent transparent transparent $primary-gold;
+        }
+
+        &:hover {
+            transition: background-color 0.3s ease-in-out;
+
+            background-color: $dark-gold;
+            &::before {
+                transition: border-color 0.3s ease-in-out;
+
+                border-color: transparent $dark-gold transparent transparent;
+            }
+            &::after {
+                transition: border-color 0.3s ease-in-out;
+
+                border-color: transparent transparent transparent $dark-gold;
+            }
+        }
+    }
+
+    // Here is the place for another button colors
+}
