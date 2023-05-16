@@ -1,7 +1,5 @@
 .button {
     position: relative;
-    top: 763.5px;
-    left: 833px;
     padding: 19px 11px;
     text-transform: uppercase;
     color: #fff;
@@ -27,40 +25,54 @@
 
     &::after {
         right: -26px;
-        border-width: 38.5px 0 38px 27px;
+        border-width: 38px 0 38.5px 27px;
     }
 
+    &__icon-container {
+        display: inline-block;
+        width: 22px;
+        margin-left: 1px;
+    }
     &_primary {
         transition: background-color 0.3s ease-in-out;
-
         background-color: $primary-gold;
         &::before {
             transition: border-color 0.3s ease-in-out;
-
             border-color: transparent $primary-gold transparent transparent;
         }
         &::after {
             transition: border-color 0.3s ease-in-out;
-
             border-color: transparent transparent transparent $primary-gold;
         }
 
         &:hover {
             transition: background-color 0.3s ease-in-out;
-
             background-color: $dark-gold;
             &::before {
                 transition: border-color 0.3s ease-in-out;
-
                 border-color: transparent $dark-gold transparent transparent;
             }
             &::after {
                 transition: border-color 0.3s ease-in-out;
-
                 border-color: transparent transparent transparent $dark-gold;
             }
         }
     }
 
     // Here is the place for another button colors
+}
+
+@media screen and (max-width: 530px) {
+    .button {
+        font-size: 24px;
+        line-height: 27px;
+        &::before {
+            left: -26px;
+            border-width: 33.5px 27px 33px 0;
+        }
+
+        &::after {
+            border-width: 33px 0 33.5px 27px;
+        }
+    }
 }
