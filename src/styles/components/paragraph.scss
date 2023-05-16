@@ -1,0 +1,27 @@
+.paragraph {
+    color: #fff;
+    font-family: Rubik;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 46px;
+}
+
+@media screen and (max-width: 780px) {
+    .paragraph {
+        font-size: 28px;
+        line-height: 42px;
+    }
+}
+@media screen and (max-width: 530px) {
+    .paragraph {
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .paragraph {
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
