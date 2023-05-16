@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&family=Titan+One&display=swap");
 @import "./variables";
-@import "./sections/header.scss";
 @import "./components/button.scss";
+@import "./components/paragraph.scss";
+@import "./components/section-heading.scss";
+@import "./sections/header.scss";
+@import "./sections/discover-section.scss";
+
 *,
 *::before,
 *::after {
@@ -17,7 +21,8 @@ body {
     &::-webkit-scrollbar {
         display: none;
     }
-    height: 300vh;
+    background-color: $dark-blue;
+    background-image: url("../assets/snow.png");
 }
 
 button {
@@ -45,8 +50,3 @@ h6 {
 img {
     width: 100%;
 }
-
-// .container {
-//     max-width: 1920px;
-//     margin-inline: auto;
-// }
