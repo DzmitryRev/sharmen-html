@@ -4,7 +4,9 @@
 @import "./components/paragraph.scss";
 @import "./components/section-heading.scss";
 @import "./sections/header.scss";
-@import "./sections/discover-section.scss";
+@import "./sections/discover.scss";
+@import "./sections/how-to-work.scss";
+@import "./sections/our-collection.scss";
 
 *,
 *::before,
@@ -18,11 +20,12 @@ html {
 }
 
 body {
+    background-color: $dark-blue;
+    background-image: url("../assets/snow.png");
+    background-size: 100% auto;
     &::-webkit-scrollbar {
         display: none;
     }
-    background-color: $dark-blue;
-    background-image: url("../assets/snow.png");
 }
 
 button {
