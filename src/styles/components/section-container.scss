@@ -1,0 +1,12 @@
+.section-container {
+    &_small,
+    &_large {
+        margin-inline: auto;
+    }
+    &_small {
+        max-width: 1665px;
+    }
+    &_large {
+        max-width: 1920px;
+    }
+}

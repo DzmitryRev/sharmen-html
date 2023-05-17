@@ -1,0 +1,11 @@
+.roadmap-section {
+    padding: 4% 0 5% 0;
+    &__title {
+        text-align: center;
+        margin-bottom: 4.2%;
+    }
+    &__map-container {
+        max-width: 1300px;
+        margin-inline: auto;
+    }
+}
